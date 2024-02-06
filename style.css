@@ -19,6 +19,7 @@ li {
   background-position: center;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 nav img {
@@ -82,4 +83,46 @@ nav {
 .hero-btn:hover {
   border: 1px solid #f44336;
   background: #f443369f;
+}
+nav .fa-solid {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  nav img {
+    width: 120px;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .text-box p {
+    font-size: 10px;
+  }
+  .text-box .hero-btn {
+    padding: 8px 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    background: #f44336;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.5s;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  nav .fa-solid {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 22px;
+  }
 }
