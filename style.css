@@ -89,19 +89,22 @@ nav .fa-solid {
 
 /* -------------Course--------------- */
 .course,
-.campus {
+.campus,
+.facilities {
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
 }
 .course h1,
-.campus h1 {
+.campus h1,
+.facilities h1 {
   font-size: 36px;
   font-weight: 600;
 }
 .course p,
-.campus p {
+.campus p,
+.facilities p {
   color: #646464;
   font-size: 14px;
   font-weight: 300;
@@ -150,6 +153,7 @@ nav .fa-solid {
 .campus-col img {
   width: 100%;
   display: block;
+  border-radius: 10px;
 }
 .layer {
   color: #fff;
@@ -180,6 +184,32 @@ nav .fa-solid {
   opacity: 1;
   bottom: 49%;
 }
+/* ------------Facilites Section-------------- */
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.facilities-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col p {
+  padding: 0;
+}
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
 @media (max-width: 700px) {
   nav img {
     width: 120px;
