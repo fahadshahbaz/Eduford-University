@@ -90,7 +90,8 @@ nav .fa-solid {
 /* -------------Course--------------- */
 .course,
 .campus,
-.facilities {
+.facilities,
+.testimonials {
   width: 80%;
   margin: auto;
   text-align: center;
@@ -98,13 +99,15 @@ nav .fa-solid {
 }
 .course h1,
 .campus h1,
-.facilities h1 {
+.facilities h1,
+.testimonials h1 {
   font-size: 36px;
   font-weight: 600;
 }
 .course p,
 .campus p,
-.facilities p {
+.facilities p,
+.testimonials p {
   color: #646464;
   font-size: 14px;
   font-weight: 300;
@@ -119,7 +122,7 @@ nav .fa-solid {
 }
 .course .course-col {
   flex-basis: 31%;
-  background: #f8e5e5;
+  background: #fff3f3;
   padding: 20px 12px;
   margin-bottom: 5%;
   border-radius: 10px;
@@ -201,7 +204,8 @@ nav .fa-solid {
   width: 100%;
   border-radius: 10px;
 }
-.facilities-col p {
+.facilities-col p,
+.testimonials-col p {
   padding: 0;
 }
 .facilities-col h3 {
@@ -209,7 +213,39 @@ nav .fa-solid {
   margin-bottom: 15px;
   text-align: left;
 }
+.facilities-col img {
+  width: 100%;
+}
 
+/* ------------Testimonials Section-------------- */
+
+.testimonials-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonials-col img {
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 30px;
+}
+.testimonials-col h3 {
+  font-size: 15px;
+  text-align: left;
+}
+.testimonials-col .fa-solid,
+.fa-regular {
+  font-size: 14px;
+  color: #f44336;
+}
+
+/* ----------------Media Queries------------ */
 @media (max-width: 700px) {
   nav img {
     width: 120px;
@@ -249,5 +285,36 @@ nav .fa-solid {
   }
   .row {
     flex-direction: column;
+  }
+  .testimonials-col img{
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+
+/* ----------Custom Scrollbar------------- */
+body {
+  --sb-track-color: #313131;
+  --sb-thumb-color: #797979;
+  --sb-size: 4px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
