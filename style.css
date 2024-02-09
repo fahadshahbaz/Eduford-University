@@ -71,7 +71,7 @@ nav {
   font-size: 14px;
   margin: 10px 0 40px;
 }
-.text-box .hero-btn {
+.hero-btn {
   border: 1px solid #fff;
   padding: 12px 34px;
   background: transparent;
@@ -107,7 +107,8 @@ nav .fa-solid {
 .course p,
 .campus p,
 .facilities p,
-.testimonials p {
+.testimonials p,
+footer p {
   color: #646464;
   font-size: 14px;
   font-weight: 300;
@@ -218,7 +219,6 @@ nav .fa-solid {
 }
 
 /* ------------Testimonials Section-------------- */
-
 .testimonials-col {
   flex-basis: 44%;
   border-radius: 10px;
@@ -245,6 +245,50 @@ nav .fa-solid {
   color: #f44336;
 }
 
+/* -----------Contact-Us Section----------- */
+.cta {
+  width: 80%;
+  margin: 100px auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./images/banner2.jpg);
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cta h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 42px;
+  padding: 0;
+}
+/* ------------Footer------------- */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+footer h4 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+footer p {
+  padding: 0 10px;
+}
+.icons .fa-brands {
+  color: #f44336;
+  margin: 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.icons .fa-heart {
+  color: #f44336;
+}
 /* ----------------Media Queries------------ */
 @media (max-width: 700px) {
   nav img {
@@ -286,17 +330,19 @@ nav .fa-solid {
   .row {
     flex-direction: column;
   }
-  .testimonials-col img{
+  .testimonials-col img {
     margin-left: 0;
     margin-right: 15px;
   }
+  .cta h1 {
+    font-size: 24px;
+  }
 }
-
 /* ----------Custom Scrollbar------------- */
 body {
   --sb-track-color: #313131;
   --sb-thumb-color: #797979;
-  --sb-size: 4px;
+  --sb-size: 6px;
 }
 
 body::-webkit-scrollbar {
