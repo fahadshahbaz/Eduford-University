@@ -16,4 +16,6 @@ Welcome to the Eduford University website repository! This website is designed t
 - CSS
 - JavaScript
 
-## Live-Link 🔗: 
+## Live-Link 🔗: https://eduford-uni.vercel.app/
+
+![image](https://github.com/fahadshahbaz/Eduford-University/assets/139986354/19747a1c-f890-426e-8de8-66e9b6911989)
